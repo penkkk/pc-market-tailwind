@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Страница для заказа товаров и услуг у компании PcMarket">
+    <link rel="stylesheet" href="../css/output.css">
+    <title>Оформление заказа</title>
+</head>
+<body>
+    <header class="site-header">
+        <a href="../index.html" class="site-header__link">
+            <h1 class="site-header__name"><span class="site-header__accent">PC</span>Market</h1>
+        </a>
+        <nav class="site-nav">
+            <ul class="site-nav__list">
+                <li class="site-nav__item">
+                    <a href="../index.html#advantages" class="site-nav__link">Преимущества</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="catalog.html" class="site-nav__link">Каталог</a> 
+                </li>
+                <li class="site-nav__item">
+                    <a href="order.html" class="site-nav__link">Заказ</a> 
+                </li>
+                <li class="site-nav__item">
+                    <a href="aboutUs.html" class="site-nav__link">О нас</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="reviews.html" class="site-nav__link">Отзывы</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="contacts.html" class="site-nav__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="order-section">
+            <h1 class="order-section__title">Оформление заказа</h1>
+            <p class="order-section__description">Заполните форму ниже, и наш менеджер свяжется с вами для подтверждения заказа.</p>
+            
+            <form class="order-form" action="#" method="POST">
+                
+                <div class="order-form__field">
+                    <label class="order-form__label" for="order-product">Выбранный товар или услуга</label>
+                    <select class="order-form__input" id="order-product" name="product" required>
+                        <option value="" disabled selected>Выберите из списка...</option>
+                        <option value="pc-ultra">Игровой ПК PcMarket Ultra</option>
+                        <option value="rtx-4070">Видеокарта GeForce RTX 4070 Super</option>
+                        <option value="custom-build">Индивидуальная сборка ПК</option>
+                        <option value="other">Другой товар из каталога</option>
+                    </select>
+                </div>
+
+                <div class="order-form__field">
+                    <label class="order-form__label" for="order-name">Ваше имя</label>
+                    <input class="order-form__input" type="text" id="order-name" name="name" placeholder="Иван Иванов" required>
+                </div>
+
+                <div class="order-form__field">
+                    <label class="order-form__label" for="order-phone">Контактный телефон</label>
+                    <input class="order-form__input" type="tel" id="order-phone" name="phone" placeholder="+7 (999) 000-00-00" required>
+                </div>
+
+                <div class="order-form__field">
+                    <label class="order-form__label" for="order-email">E-mail</label>
+                    <input class="order-form__input" type="email" id="order-email" name="email" placeholder="example@mail.ru" required>
+                </div>
+
+                <div class="order-form__field">
+                    <label class="order-form__label" for="order-comment">Комментарий к заказу</label>
+                    <textarea class="order-form__input order-form__input--textarea" id="order-comment" name="comment" rows="4" placeholder="Пожелания по доставке..."></textarea>
+                </div>
+
+                <div class="order-form__field order-form__field--checkbox">
+                    <input class="order-form__checkbox" type="checkbox" id="order-consent" name="consent" required>
+                    <label class="order-form__label order-form__label--checkbox" for="order-consent">
+                        Я согласен на обработку персональных данных
+                    </label>
+                </div>
+
+                <div class="order-form__actions">
+                    <button class="order-form__button button button--primary" type="submit">Оформить заказ</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="site-footer__text">&copy; 2026 PcMarket. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>

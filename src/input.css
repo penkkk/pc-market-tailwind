@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../assets/fonts/space-grotesk-v22-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../assets/fonts/space-grotesk-v22-latin-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../assets/fonts/space-grotesk-v22-latin-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-bg: #fffcf2;
+  --color-bg-card: #fffcf2;
+  --color-text: #252422;
+  --color-text-muted: #403d39;
+  --color-primary: #eb5e28;
+  --color-primary-hover: #cc4514;
+  --color-border: #ccc5b9;
+  --color-danger: #f43f5e;
+  --color-success: #10b981;
+
+  --shadow-card: 0 8px 24px rgb(37 36 34 / 15%);
+  --shadow-glow: 0 0 15px rgb(235 94 40 / 40%);
+
+  --font-main: "Space Grotesk", system-ui, sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 100px;
+}
+
+@layer base {
+  html {
+    @apply bg-bg;
+  }
+
+  body {
+    @apply min-h-screen bg-bg font-main text-text;
+  }
+
+  a {
+    @apply decoration-0 text-inherit;
+  }
+  ul {
+    @apply list-none
+  }
+  main {
+    @apply mx-auto max-w-[1600px] px-10;
+  }
+  .site-header {
+    @apply mx-auto max-w-[1600px] px-10;
+  }
+  .site-footer {
+    @apply mx-auto max-w-[1600px] px-10;
+  }
+}
+
+.button {
+    @apply inline-flex items-center content-center p-3 text-[1rem] font-medium rounded-md cursor-pointer text-center transition-all duration-300 ease-in-out
+}
+.button-primary {
+    @apply bg-primary  text-white border-0 hover:bg-primary-hover hover:shadow-glow
+}
+.button-secondary {
+    @apply bg-transparent text-text border-solid border-1 border-border hover:bg-bg-card hover:border-primary-hover hover:text-primary
+}
+
+.site-header {
+    @apply sticky top-5 z-50 my-5 flex items-center justify-between rounded-lg border border-border bg-bg-card py-4 shadow-card;
+}
+
+.site-header__link {
+    @apply inline-flex items-center gap-3 font-main text-2xl font-bold text-text;
+}
+
+.site-header__accent {
+    @apply text-primary;
+}
+
+.site-nav__list {
+    @apply flex items-center gap-4;
+}
+
+.site-nav__link {
+    @apply font-medium text-text-muted transition-colors duration-300 hover:text-primary;
+}
+
+.site-footer {
+    @apply mt-20 flex items-center justify-center border-t border-border py-8;
+}

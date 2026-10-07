@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Главная страница магазина PcMarket">
+    <link rel="stylesheet" href="css/output.css">
+    <script src="./js/main.js" defer></script>
+    <title>PcMarket</title>
+</head>
+
+
+<body id="body">
+
+    <header class="site-header" id="header">
+        <a href="index.html" class="site-header__link">
+            <h1 class=""><span class="site-header__accent">PC</span>Market</h1>
+        </a>
+        <nav class="site-nav">
+            <ul class="site-nav__list">
+                <li class="site-nav__item">
+                    <a href="#advantages" class="site-nav__link">Преимущества</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="./pages/catalog.html" class="site-nav__link">Каталог</a> 
+                </li>
+                <li class="site-nav__item">
+                    <a href="./pages/order.html" class="site-nav__link">Заказ</a> 
+                </li>
+                <li class="site-nav__item">
+                    <a href="./pages/aboutUs.html" class="site-nav__link">О нас</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="./pages/reviews.html" class="site-nav__link">Отзывы</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="./pages/contacts.html" class="site-nav__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="px-5 py-20 text-center" id="hero">
+            <div class="max-w-200 mx-auto my-0">
+                <h1 class="text-5xl font-bold mb-6 text-text leading-[1.2]">Ваш идеальный ПК начинается здесь</h1>
+                <p class="mb-10 leading-[1.5] text-text-muted text-[20px]">
+                    Собираем мощные игровые и рабочие станции. Комплектующие от официальных дилеров с гарантией.
+                </p>
+                <div class="flex justify-center gap-3">
+                    <a class="button button-primary" href="./pages/catalog.html">Перейти к товарам</a>
+                    <a class="button button-secondary" href="./pages/services.html">Наши услуги</a>
+                </div>
+                <button type="button" class="button button-secondary mt-2" id="open-modal-btn">Заказать звонок</button>
+            </div>
+        </section>
+
+        <section id="advantages" class="px-0 py-15">
+            <h2 class="text-[32px] mb-10 text-center">Наши преимущества</h2>
+            <ul class="grid grid-cols-3  gap-6">
+                <li class="bg-bg-card p-8 rounded-lg border border-solid border-border text-center shadow-card transition-all duration-300 ease-in-out">
+                    <h3 class="text-[20px] mb-3 font-bold text-primary">Официальная гарантия</h3>
+                    <p class="text-text-muted leading-[1.5]">От 1 до 3 лет на все комплектующие и готовые сборки.</p>
+                </li>
+                <li class="bg-bg-card p-8 rounded-lg border border-solid border-border text-center shadow-card transition-all duration-300 ease-in-out">
+                    <h3 class="text-[20px] mb-3 font-bold text-primary">Экспертная поддержка</h3>
+                    <p class="text-text-muted leading-[1.5]">Поможем подобрать идеальные детали под ваш бюджет.</p>
+                </li>
+                <li class="bg-bg-card p-8 rounded-lg border border-solid border-border text-center shadow-card transition-all duration-300 ease-in-out">
+                    <h3 class="text-[20px] mb-3 font-bold text-primary">Быстрая доставка</h3>
+                    <p class="text-text-muted leading-[1.5]">Доставляем заказы курьером в день оформления.</p>
+                </li>
+            </ul>
+        </section>
+
+        
+        <section id="popular" class="flex flex-col items-center">
+            <h2 class="text-center text-[32px] mb-10">Популярные товары</h2>
+            
+            <div class="grid grid-cols-2 gap-6 mb-10 w-full">
+                
+                <article class="flex relative flex-col bg-bg-card border border-solid border-border rounded-lg overflow-scroll shadow-card">
+                    <span class="absolute top-4 right-4 bg-primary text-white px-2 py-1 rounded-pill">Хит</span>
+                    <img class="w-full h-75 p-5 object-contain border-b border-b-border bg-blend-multiply" src="./assets/img/gaming-pc.jpg" alt="Игровой ПК">
+                    <div class="p-6 flex flex-col grow">
+                        <h3 class="text-[18px] font-bold text-text mb-3 leading-[1.4]">Игровой ПК PcMarket Ultra</h3>
+                        <p class="text-2xl font-bold text-primary mb-6 mt-auto">219 990 ₽</p>
+                        <a class="w-full mb-2 button button-primary justify-center" href="./pages/order.html">Купить</a>
+                        <a href="../pages/product.html" class="w-full button button-secondary justify-center">Подробнее</a>
+                    </div>
+                </article>
+                
+                <article class="flex relative flex-col bg-bg-card border border-solid border-border rounded-lg overflow-scroll shadow-card">
+                    <img class="w-full h-75 p-5 object-contain border-b border-b-border bg-blend-multiply" src="./assets/img/rtx4070.jpeg" alt="Видеокарта">
+                    <span class="absolute top-4 right-4 bg-primary text-white px-2 py-1 rounded-pill">Хит</span>
+                    <div class="p-6 flex flex-col grow">
+                        <h3 class="text-[18px] font-bold text-text mb-3 leading-[1.4]">GeForce RTX 4070 Super 12GB</h3>
+                        <p class="text-2xl font-bold text-primary mb-6 mt-auto">67 490 ₽</p>
+                        <a class="button button-primary w-full mb-2 justify-center" href="./pages/order.html">Купить</a>
+                        <a href="../pages/product.html" class="w-full button button-secondary justify-center">Подробнее</a>
+                    </div>
+                </article>
+            </div>
+            
+            
+            <a class="popular__more-link button button-secondary" href="./pages/catalog.html">Смотреть весь каталог</a>
+        </section>
+
+    </main>
+
+    <dialog id="callback-modal" class="modal">
+        <div class="modal__content">
+            <h2 class="modal__title">Заказать обратный звонок</h2>
+            <p class="modal__text">Оставьте номер, и мы перезвоним.</p>
+            <form class="modal__form">
+                <input type="tel" class="modal__input" placeholder="Ваш телефон" required>
+                <button type="submit" class="modal__button button button-primary">Жду звонка</button>
+                <button type="button" class="button button-secondary" id="close-modal-btn">Закрыть</button>
+            </form>
+        </div>
+    </dialog>
+
+    <a href="#body" class="button button-up">↑</a>
+
+    <footer class="site-footer">
+        <p class="site-footer__text">&copy; 2026 PcMarket. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
+
