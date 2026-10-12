@@ -38,47 +38,47 @@
     </header>
 
     <main>
-        <section class="catalog-intro">
-            <h1 class="catalog-intro__title">Каталог товаров PcMarket</h1>
-            <p class="catalog-intro__description">Комплектующие и готовые конфигурации ПК с официальной гарантией качества.</p>
+        <section class="my-10">
+            <h1 class="mb-4 text-[40px] font-bold text-text">Каталог товаров PcMarket</h1>
+            <p class="text-lg text-text-muted">Комплектующие и готовые конфигурации ПК с официальной гарантией качества.</p>
         </section>
         
-        <div class="catalog-layout">
-            <aside class="catalog-filters">
-                <h2 class="catalog-filters__title">Фильтры</h2>
-                <p class="catalog-filters__text">В разработке...</p>
+        <div class="grid grid-cols-[280px_1fr] items-start gap-10">
+            <aside class="sticky top-25 rounded-lg border border-border bg-bg-card p-6 shadow-card">
+                <h2 class="mb-4 text-xl font-bold">Фильтры</h2>
+                <p>В разработке...</p>
             </aside>
 
-            <section class="catalog">
-                <article class="catalog-card">
-                    <img src="../assets/img/gaming-pc.jpg" alt="Игровой компьютер PcMarket Ultra" class="catalog-card__image">
-                    <div class="catalog-card__content">
-                        <h2 class="catalog-card__title">Игровой ПК PcMarket Ultra</h2>
-                        <p class="catalog-card__description">
+            <section class="flex flex-col gap-8">
+                <article class="relative flex gap-6 rounded-lg border border-border bg-bg-card p-6 shadow-card">
+                    <img src="../assets/img/gaming-pc.jpg" alt="Игровой компьютер PcMarket Ultra" class="h-[250px] w-[250px] shrink-0 object-contain mix-blend-multiply">
+                    <div class="flex flex-col">
+                        <h2 class="mb-4 text-2xl">Игровой ПК PcMarket Ultra</h2>
+                        <p class="mb-6 leading-6 text-text-muted">
                         Мощный системный блок для игр в 4K и работы с 3D-графикой. Оснащён процессором Intel Core i7-14700KF, видеокартой GeForce RTX 4080 Super 16GB, 32 ГБ быстрой оперативной памяти DDR5 и скоростным накопителем NVMe SSD на 2 ТБ.
                         </p>
-                        <p class="catalog-card__detail"><strong class="catalog-card__label">Гарантия:</strong> 3 года</p>
-                        <p class="catalog-card__detail"><strong class="catalog-card__label">В наличии:</strong> Есть</p>
-                        <p class="catalog-card__detail"><strong class="catalog-card__label">Цена:</strong> 219 990 ₽</p>
-                        <a href="order.html" class="catalog-card__link button button--primary">Купить</a>
-                        <a href="product.html" class="catalog-card__link button button--secondary">Подробнее</a>
+                        <p class="mb-2 text-base"><strong class="font-bold text-text">Гарантия:</strong> 3 года</p>
+                        <p class="mb-2 text-base"><strong class="font-bold text-text">В наличии:</strong> Есть</p>
+                        <p class="mb-2 text-base"><strong class="font-bold text-text">Цена:</strong> 219 990 ₽</p>
+                        <a href="order.html" class="button button-primary mb-2 hover:-translate-y-0.5">Купить</a>
+                        <a href="product.html" class="button button-secondary mb-0">Подробнее</a>
                     </div>
                 </article>
 
-                <hr>
+                <hr class="h-px border-0 bg-border">
 
-                <article class="catalog-card">
-                    <img src="../assets/img/rtx4070.jpeg" alt="Видеокарта GeForce RTX 4070 Super" class="catalog-card__image">
-                    <div class="catalog-card__content">
-                        <h2 class="catalog-card__title">Видеокарта GeForce RTX 4070 Super 12GB</h2>
-                        <p class="catalog-card__description"> 
+                <article class="relative flex gap-6 rounded-lg border border-border bg-bg-card p-6 shadow-card">
+                    <img src="../assets/img/rtx4070.jpeg" alt="Видеокарта GeForce RTX 4070 Super" class="h-[250px] w-[250px] shrink-0 object-contain mix-blend-multiply">
+                    <div class="flex flex-col">
+                        <h2 class="mb-4 text-2xl">Видеокарта GeForce RTX 4070 Super 12GB</h2>
+                        <p class="mb-6 leading-6 text-text-muted">
                         Высокопроизводительная видеокарта с поддержкой трассировки лучей и DLSS 3.5. Эффективная трёхвентиляторная система охлаждения, низкий уровень шума под нагрузкой и 12 ГБ видеопамяти стандарта GDDR6X для комфортного гейминга в 2K-разрешении.
                         </p>
-                        <p class="catalog-card__detail"><strong class="catalog-card__label">Гарантия:</strong> 3 года</p>
-                        <p class="catalog-card__detail"><strong class="catalog-card__label">В наличии:</strong> Осталось мало</p>
-                        <p class="catalog-card__detail"><strong class="catalog-card__label">Цена:</strong> 67 490 ₽</p>
-                        <a href="order.html" class="catalog-card__link button button--primary">Купить</a>
-                        <a href="product.html" class="catalog-card__link button button--secondary">Подробнее</a>
+                        <p class="mb-2 text-base"><strong class="font-bold text-text">Гарантия:</strong> 3 года</p>
+                        <p class="mb-2 text-base"><strong class="font-bold text-text">В наличии:</strong> Осталось мало</p>
+                        <p class="mb-2 text-base"><strong class="font-bold text-text">Цена:</strong> 67 490 ₽</p>
+                        <a href="order.html" class="button button-primary mb-2 hover:-translate-y-0.5">Купить</a>
+                        <a href="product.html" class="button button-secondary mb-0">Подробнее</a>
                     </div>
                 </article>
             </section>
