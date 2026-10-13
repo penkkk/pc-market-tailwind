@@ -109,13 +109,13 @@
 
     </main>
 
-    <dialog id="callback-modal" class="modal">
-        <div class="modal__content">
-            <h2 class="modal__title">Заказать обратный звонок</h2>
-            <p class="modal__text">Оставьте номер, и мы перезвоним.</p>
-            <form class="modal__form">
-                <input type="tel" class="modal__input" placeholder="Ваш телефон" required>
-                <button type="submit" class="modal__button button button-primary">Жду звонка</button>
+    <dialog id="callback-modal" class="fixed m-auto max-w-[400px] rounded-lg border border-border bg-bg-card p-8 shadow-card backdrop:bg-black/70">
+        <div>
+            <h2 class="mb-2 text-2xl font-bold text-text">Заказать обратный звонок</h2>
+            <p class="mb-2 text-lg text-text-muted">Оставьте номер, и мы перезвоним.</p>
+            <form>
+                <input type="tel" class="mb-2 w-full rounded-md border border-border bg-transparent px-4 py-3.5 text-base font-[inherit] text-text transition-[border-color,box-shadow] duration-300 ease-[ease] focus:border-primary focus:shadow-card focus:outline-none" placeholder="Ваш телефон" required>
+                <button type="submit" class="button button-primary hover:-translate-y-0.5">Жду звонка</button>
                 <button type="button" class="button button-secondary" id="close-modal-btn">Закрыть</button>
             </form>
         </div>
@@ -129,4 +129,3 @@
 
 </body>
 </html>
-
