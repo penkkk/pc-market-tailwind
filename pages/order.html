@@ -36,16 +36,16 @@
         </nav>
     </header>
 
-    <main class="main-content">
-        <section class="order-section">
-            <h1 class="order-section__title">Оформление заказа</h1>
-            <p class="order-section__description">Заполните форму ниже, и наш менеджер свяжется с вами для подтверждения заказа.</p>
+    <main>
+        <section class="mx-auto mt-10 mb-20 max-w-[600px]">
+            <h1 class="mb-4 text-center text-[36px] font-bold">Оформление заказа</h1>
+            <p class="mb-10 text-center text-text-muted">Заполните форму ниже, и наш менеджер свяжется с вами для подтверждения заказа.</p>
             
-            <form class="order-form" action="#" method="POST">
+            <form class="flex flex-col gap-6 rounded-lg border border-border bg-bg-card p-10 shadow-card" action="#" method="POST">
                 
-                <div class="order-form__field">
-                    <label class="order-form__label" for="order-product">Выбранный товар или услуга</label>
-                    <select class="order-form__input" id="order-product" name="product" required>
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-bold text-text" for="order-product">Выбранный товар или услуга</label>
+                    <select class="w-full rounded-md border border-border bg-transparent px-4 py-3.5 text-base font-[inherit] text-text transition-[border-color,box-shadow] duration-300 ease-[ease] focus:border-primary focus:shadow-card focus:outline-none" id="order-product" name="product" required>
                         <option value="" disabled selected>Выберите из списка...</option>
                         <option value="pc-ultra">Игровой ПК PcMarket Ultra</option>
                         <option value="rtx-4070">Видеокарта GeForce RTX 4070 Super</option>
@@ -54,35 +54,35 @@
                     </select>
                 </div>
 
-                <div class="order-form__field">
-                    <label class="order-form__label" for="order-name">Ваше имя</label>
-                    <input class="order-form__input" type="text" id="order-name" name="name" placeholder="Иван Иванов" required>
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-bold text-text" for="order-name">Ваше имя</label>
+                    <input class="w-full rounded-md border border-border bg-transparent px-4 py-3.5 text-base font-[inherit] text-text transition-[border-color,box-shadow] duration-300 ease-[ease] focus:border-primary focus:shadow-card focus:outline-none" type="text" id="order-name" name="name" placeholder="Иван Иванов" required>
                 </div>
 
-                <div class="order-form__field">
-                    <label class="order-form__label" for="order-phone">Контактный телефон</label>
-                    <input class="order-form__input" type="tel" id="order-phone" name="phone" placeholder="+7 (999) 000-00-00" required>
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-bold text-text" for="order-phone">Контактный телефон</label>
+                    <input class="w-full rounded-md border border-border bg-transparent px-4 py-3.5 text-base font-[inherit] text-text transition-[border-color,box-shadow] duration-300 ease-[ease] focus:border-primary focus:shadow-card focus:outline-none" type="tel" id="order-phone" name="phone" placeholder="+7 (999) 000-00-00" required>
                 </div>
 
-                <div class="order-form__field">
-                    <label class="order-form__label" for="order-email">E-mail</label>
-                    <input class="order-form__input" type="email" id="order-email" name="email" placeholder="example@mail.ru" required>
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-bold text-text" for="order-email">E-mail</label>
+                    <input class="w-full rounded-md border border-border bg-transparent px-4 py-3.5 text-base font-[inherit] text-text transition-[border-color,box-shadow] duration-300 ease-[ease] focus:border-primary focus:shadow-card focus:outline-none" type="email" id="order-email" name="email" placeholder="example@mail.ru" required>
                 </div>
 
-                <div class="order-form__field">
-                    <label class="order-form__label" for="order-comment">Комментарий к заказу</label>
-                    <textarea class="order-form__input order-form__input--textarea" id="order-comment" name="comment" rows="4" placeholder="Пожелания по доставке..."></textarea>
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-bold text-text" for="order-comment">Комментарий к заказу</label>
+                    <textarea class="min-h-[100px] w-full resize-y rounded-md border border-border bg-transparent px-4 py-3.5 text-base font-[inherit] text-text transition-[border-color,box-shadow] duration-300 ease-[ease] focus:border-primary focus:shadow-card focus:outline-none" id="order-comment" name="comment" rows="4" placeholder="Пожелания по доставке..."></textarea>
                 </div>
 
-                <div class="order-form__field order-form__field--checkbox">
-                    <input class="order-form__checkbox" type="checkbox" id="order-consent" name="consent" required>
-                    <label class="order-form__label order-form__label--checkbox" for="order-consent">
+                <div class="flex flex-row items-center gap-2">
+                    <input class="size-[18px] cursor-pointer accent-primary" type="checkbox" id="order-consent" name="consent" required>
+                    <label class="cursor-pointer text-sm font-normal text-text-muted" for="order-consent">
                         Я согласен на обработку персональных данных
                     </label>
                 </div>
 
-                <div class="order-form__actions">
-                    <button class="order-form__button button button--primary" type="submit">Оформить заказ</button>
+                <div class="mt-4">
+                    <button class="button button-primary w-full p-4! text-lg!" type="submit">Оформить заказ</button>
                 </div>
 
             </form>
