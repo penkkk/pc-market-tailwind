@@ -39,19 +39,19 @@
 
     <main>
         <section class="my-10">
-            <h1 class="mb-4 text-[40px] font-bold text-text">Каталог товаров PcMarket</h1>
+            <h1 class="mb-4 text-3xl font-bold text-text md:text-[40px]">Каталог товаров PcMarket</h1>
             <p class="text-lg text-text-muted">Комплектующие и готовые конфигурации ПК с официальной гарантией качества.</p>
         </section>
         
-        <div class="grid grid-cols-[280px_1fr] items-start gap-10">
-            <aside class="sticky top-25 rounded-lg border border-border bg-bg-card p-6 shadow-card">
+        <div class="grid grid-cols-1 items-start gap-10 lg:grid-cols-[280px_1fr]">
+            <aside class="relative rounded-lg border border-border bg-bg-card p-6 shadow-card lg:sticky lg:top-25">
                 <h2 class="mb-4 text-xl font-bold">Фильтры</h2>
                 <p>В разработке...</p>
             </aside>
 
             <section class="flex flex-col gap-8">
-                <article class="relative flex gap-6 rounded-lg border border-border bg-bg-card p-6 shadow-card">
-                    <img src="../assets/img/gaming-pc.jpg" alt="Игровой компьютер PcMarket Ultra" class="h-[250px] w-[250px] shrink-0 object-contain mix-blend-multiply">
+                <article class="relative flex flex-col gap-6 rounded-lg border border-border bg-bg-card p-6 shadow-card sm:flex-row">
+                    <img src="../assets/img/gaming-pc.jpg" alt="Игровой компьютер PcMarket Ultra" class="h-[250px] w-full max-w-[250px] self-center object-contain mix-blend-multiply sm:w-[250px] sm:shrink-0">
                     <div class="flex flex-col">
                         <h2 class="mb-4 text-2xl">Игровой ПК PcMarket Ultra</h2>
                         <p class="mb-6 leading-6 text-text-muted">
@@ -67,8 +67,8 @@
 
                 <hr class="h-px border-0 bg-border">
 
-                <article class="relative flex gap-6 rounded-lg border border-border bg-bg-card p-6 shadow-card">
-                    <img src="../assets/img/rtx4070.jpeg" alt="Видеокарта GeForce RTX 4070 Super" class="h-[250px] w-[250px] shrink-0 object-contain mix-blend-multiply">
+                <article class="relative flex flex-col gap-6 rounded-lg border border-border bg-bg-card p-6 shadow-card sm:flex-row">
+                    <img src="../assets/img/rtx4070.jpeg" alt="Видеокарта GeForce RTX 4070 Super" class="h-[250px] w-full max-w-[250px] self-center object-contain mix-blend-multiply sm:w-[250px] sm:shrink-0">
                     <div class="flex flex-col">
                         <h2 class="mb-4 text-2xl">Видеокарта GeForce RTX 4070 Super 12GB</h2>
                         <p class="mb-6 leading-6 text-text-muted">

@@ -38,10 +38,15 @@
 
     <main>
         <section class="mx-auto mt-10 mb-20 max-w-[600px]">
-            <h1 class="mb-4 text-center text-[36px] font-bold">Оформление заказа</h1>
+            <h1 class="mb-4 text-center text-3xl font-bold md:text-[36px]">Оформление заказа</h1>
             <p class="mb-10 text-center text-text-muted">Заполните форму ниже, и наш менеджер свяжется с вами для подтверждения заказа.</p>
+
+            <div class="flex flex-col gap-1 rounded-md border px-4 py-3 text-sm leading-6 border-primary bg-[rgb(235_94_40_/_8%)] text-text mb-6" role="alert">
+                <strong class="font-bold">Подсказка:</strong>
+                <span>После отправки заявки менеджер уточнит детали заказа и способ доставки.</span>
+            </div>
             
-            <form class="flex flex-col gap-6 rounded-lg border border-border bg-bg-card p-10 shadow-card" action="#" method="POST">
+            <form class="flex flex-col gap-6 rounded-lg border border-border bg-bg-card p-5 shadow-card sm:p-10">
                 
                 <div class="flex flex-col gap-2">
                     <label class="text-sm font-bold text-text" for="order-product">Выбранный товар или услуга</label>
@@ -61,7 +66,10 @@
 
                 <div class="flex flex-col gap-2">
                     <label class="text-sm font-bold text-text" for="order-phone">Контактный телефон</label>
-                    <input class="w-full rounded-md border border-border bg-transparent px-4 py-3.5 text-base font-[inherit] text-text transition-[border-color,box-shadow] duration-300 ease-[ease] focus:border-primary focus:shadow-card focus:outline-none" type="tel" id="order-phone" name="phone" placeholder="+7 (999) 000-00-00" required>
+                    <div class="flex w-full">
+                        <span class="inline-flex items-center rounded-l-md border border-r-0 border-border bg-bg px-4 font-medium text-text-muted" aria-hidden="true">+7</span>
+                        <input class="min-w-0 flex-1 rounded-r-md border border-border bg-transparent px-4 py-3.5 text-base font-[inherit] text-text transition-[border-color,box-shadow] duration-300 ease-[ease] focus:border-primary focus:shadow-card focus:outline-none" type="tel" id="order-phone" name="phone" placeholder="(999) 000-00-00" required>
+                    </div>
                 </div>
 
                 <div class="flex flex-col gap-2">

@@ -38,10 +38,10 @@
     </header>
 
     <main class="pt-10 pb-15">
-        <article class="mb-15 rounded-lg border border-border bg-bg-card p-10 shadow-card">
-            <h1 class="mb-8 border-b border-border pb-4 text-[36px] font-bold text-text">Игровой ПК PcMarket Ultra</h1>
+        <article class="mb-15 rounded-lg border border-border bg-bg-card p-5 shadow-card md:p-10">
+            <h1 class="mb-8 border-b border-border pb-4 text-3xl font-bold text-text md:text-[36px]">Игровой ПК PcMarket Ultra</h1>
             
-            <div class="grid grid-cols-2 items-center gap-10">
+            <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
                 <img class="max-h-[400px] w-full object-contain mix-blend-multiply" src="../assets/img/gaming-pc.jpg" alt="Игровой ПК PcMarket Ultra">
                 
                 <div class="flex flex-col gap-6">
@@ -52,7 +52,7 @@
             </div>
         </article>
 
-        <section class="rounded-lg border border-border bg-bg-card p-10 shadow-card">
+        <section class="rounded-lg border border-border bg-bg-card p-5 shadow-card md:p-10">
             <h2 class="mb-6 text-[28px]">Технические характеристики</h2>
             <table class="w-full border-collapse text-left">
                 <caption class="caption-bottom mt-3 text-right text-sm text-text-muted">Подробная спецификация комплектующих</caption>
@@ -85,6 +85,21 @@
                     </tr>
                 </tbody>
             </table>
+
+            <div class="accordion mt-10">
+                <details class="accordion__item">
+                    <summary class="accordion__trigger">Комплектация и условия гарантии</summary>
+                    <div class="accordion__content">
+                        <p>В комплект входят системный блок, кабель питания и гарантийный талон. Перед отправкой сборка проходит стресс-тестирование, а гарантия на готовый ПК действует 3 года.</p>
+                    </div>
+                </details>
+                <details class="accordion__item">
+                    <summary class="accordion__trigger">Поддержка после покупки</summary>
+                    <div class="accordion__content">
+                        <p>Поможем с первоначальной настройкой, обновлением драйверов и подбором периферии. Консультация доступна по телефону и в форме обратной связи.</p>
+                    </div>
+                </details>
+            </div>
         </section>
     </main>
 
